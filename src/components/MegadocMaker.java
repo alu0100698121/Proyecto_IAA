@@ -61,6 +61,7 @@ public class MegadocMaker {
 			
 				br = new BufferedReader(new FileReader(f)); // Se abre el fichero para leerlo
 				s = br.readLine(); // Se almacena el comentario en la string s
+				s = s.replaceAll("<.*?>",""); // Elimina las etiquetas HTML
 				br.close(); // Cerrar el reader
 				
 				pw.append(s+"\n\n"); // Se anexiona la nueva cadena al megadocumento
