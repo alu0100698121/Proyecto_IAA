@@ -34,6 +34,11 @@ public class WordCounter {
 					hash.put(line, 1); // Se pone el valor de las apariciones a 1
 		}
 		
-		System.out.println(hash.get("film")); // Probando el hash (Imprime las apariciones de "film")
+		System.out.println(this.getClass().getSimpleName()+": Done.");
+		//System.out.println(hash.get("Elia")); // Probando el hash (Imprime las apariciones de "film")
+	}
+	
+	public int howMany(String s) {
+		return hash.get(s);
 	}
 }

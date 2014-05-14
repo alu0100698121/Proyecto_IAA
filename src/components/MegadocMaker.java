@@ -71,6 +71,6 @@ public class MegadocMaker {
 			
 		} catch (Exception e) {}
 		
-		System.out.println("Done."); // Aviso al terminar de leer
+		System.out.println(this.getClass().getSimpleName()+": Done."); // Aviso al terminar de leer
 	}
 }
